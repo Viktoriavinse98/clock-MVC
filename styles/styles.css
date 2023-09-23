@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 650px;
+    margin: 20px auto;
+}
+
+
+.parent {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.clock {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #FCCA66;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+.hour,
+.min,
+.sec {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0px 0px;
+
+}
+
+.hour {
+    position: absolute;
+    width: 7px;
+    height: 40px;
+    background-color: black;
+    z-index: 10;
+    border-radius: 6px;
+    margin-top: -7px;
+    margin-left: 3px;
+
+}
+
+.min {
+    position: absolute;
+    width: 4px;
+    height: 60px;
+    background-color: black;
+    z-index: 11;
+    border-radius: 6px;
+    margin-top: -5px;
+    margin-left: 3px;
+}
+
+.sec {
+    position: absolute;
+    width: 2px;
+    height: 70px;
+    background-color: black;
+    z-index: 12;
+    border-radius: 6px;
+    margin-top: -1.5px;
+    margin-left: 3px;
+}
+
+.digit {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #48B382;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+}
+
+.btn-stop {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+}
+
+.btn-start {
+    position: absolute;
+    top: 3px;
+    left: 70px;
+}
+
+.city {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    margin: 0;
+}
+
+.main2,
+.main3,
+.main4,
+.main5 {
+    position: relative;
+
+}
+
+.city {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    margin: 0;
+}
